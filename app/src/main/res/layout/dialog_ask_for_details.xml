@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="training Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/txtTrainingName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Time for this exercise will be:"
+        android:layout_below="@id/txtTrainingName"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtQuestion"
+        android:textSize="17sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestion"
+        android:gravity="center"
+        android:id="@+id/MidRelLayout">
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:hint="minutes"
+            android:gravity="center"
+            android:id="@+id/edtTxtMinutes" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="minutes"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/edtTxtMinutes"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BottomRelLayout"
+        android:layout_below="@id/MidRelLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On which day will you do this?"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtDay"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerDay"
+            android:layout_below="@id/txtDay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BottomRelLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:background="@drawable/button_border"
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="45dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:background="@drawable/button_border"
+            android:id="@+id/btnAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginRight="30dp"
+    android:layout_height="400dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_empty_checkbox"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emptyCheckBox"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_filled_checkbox"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/filledCheckBox"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/txtNamePlan"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/txtNamePlan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imagePlan"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="time:"
+            android:layout_below="@id/imagePlan"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:id="@+id/txtTime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtTime"
+            android:layout_below="@id/imagePlan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text=" minutes "
+            android:textSize="18sp"
+            android:id="@+id/txtMinutes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtMinutes"
+            android:layout_below="@id/imagePlan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="minutes"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTime"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="short description"
+            android:textSize="18sp"
+            android:id="@+id/txtDescPlan"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

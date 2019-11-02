@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:id="@+id/parent"
+    app:cardCornerRadius="25dp"
+    android:padding="10dp"
+    android:layout_margin="15dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exerciseName"
+            android:text="Exercise name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/exerciseImage"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exerciseTags"
+            android:layout_below="@id/exerciseImage"
+            android:text="these are some tags"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
